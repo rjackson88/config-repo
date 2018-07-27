@@ -1,0 +1,8 @@
+= Config Repo
+
+Configuration repository for distributed applications.
+
+Should be placed at:
+```
+${USERPROFILE}/config-repo
+```
