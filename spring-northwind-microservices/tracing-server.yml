@@ -1,0 +1,17 @@
+server:
+  port: 9411
+
+---
+spring:
+  profiles: default
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random-uuid}
+
+---
+spring:
+  profiles: docker
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-server:8761/eureka/
